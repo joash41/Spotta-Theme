@@ -1,0 +1,107 @@
+.gform_wrapper
+    .ginput_container_consent .gfield_required
+        visibility: hidden
+    input, textarea
+        border: 0
+        border-bottom: 1px solid rgba(2, 3, 3, 0.75)
+        padding-bottom: 30px !important
+        padding-left: 20px !important
+        box-sizing: border-box
+        color: black
+        &::placeholder
+            opacity: 0.75
+        &:focus
+            color: black !important
+    .gform_footer
+        text-align: right
+        @media (max-width: 768px)
+            // text-align: center
+    input[type=submit]
+        border: 0 !important
+        border-radius: 0px !important
+        background: #2a70b7 !important
+        text-transform: uppercase
+        padding: 10px 72px !important
+        margin: 0px !important
+        width: auto !important
+        height: auto !important
+        line-height: normal
+        font-family: inherit
+        color: white
+        cursor: pointer
+        transition: all 0.2s
+        -webkit-appearance: none
+        border-radius: 0
+        &:hover
+            background: #2e88e1 !important
+    input#input_1_6_1 
+        display: none
+    .ginput_container_consent
+        padding-left: 38px
+        label.gfield_consent_label
+            font-weight: 100
+            // padding-left: 26px
+            position: relative
+            cursor: pointer
+            transition: all 0.2s
+            // margin-left: -27px
+            a
+                color: $color1
+                &:hover
+                    color: #2e88e1
+            &:before
+                opacity: 0
+                content: ''
+                width: 21px
+                height: 10px
+                border-left: 3px solid black
+                border-bottom: 3px solid black
+                position: absolute
+                left: -30px
+                top: 3px
+                transform: rotate(-45deg)
+                transition: all 0.2s
+                -webkit-appearance: none
+            &:after
+                content: ''
+                width: 20px
+                height: 20px
+                border: 1px solid
+                position: absolute
+                top: 4px
+                left: -35px
+                -webkit-appearance: none !important
+                @media (max-width: 641px)
+                    top: -75px
+                @media (max-width: 500px)
+                    top: -133px
+                @media (max-width: 360px)
+                    top: -125px
+    li.gfield.gfield_error
+        border-top: 0px !important
+        border-bottom: 1px !important
+        background-color: transparent !important
+    li.gfield_error input
+        color: #ff3465
+        border: 0 !important
+        border-bottom: 1px solid #ff3465 !important
+    div.validation_error
+        display: none
+        border-top: 2px solid #ff3465 !important
+        border-bottom: 2px solid #ff3465 !important
+        color: #ff3465 !important
+    .gfield_description.validation_message
+        padding: 0px !important
+        text-align: right
+        color: #ff3465
+    .validation_message
+        font-weight: 100 !important
+        color: #ff3465
+.gform_wrapper input[type="checkbox"]:checked + label.gfield_consent_label, label.gfield_consent_label a
+    //font-weight: 400
+    transition: all 0.2s
+    &:before
+        opacity: 1
+
+.gfield_required
+    display: none

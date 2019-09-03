@@ -1,0 +1,105 @@
+.faq_section
+    margin-top: 58px
+    padding: 50px
+    @media (max-width: 768px)
+        padding: 0px
+    .container
+        display: flex
+        @media (max-width: 768px)
+            flex-direction: column !important
+        .faq_image
+            position: relative
+            width: 30%
+            margin-top: -38px
+            @media (max-width: 768px)
+                width: 100%
+                background-color: white
+            .image
+                -webkit-box-shadow: 4px 4px 33px 0px rgba(0, 0, 0, 0.12)
+                -moz-box-shadow: 4px 4px 33px 0px rgba(0, 0, 0, 0.12)
+                box-shadow: 4px 4px 33px 0px rgba(0, 0, 0, 0.12)
+                width: 109%
+                height: 310px
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+                @media (max-width: 768px)
+                    width: 100%
+                    margin-left: -4%
+            .testimonals_section
+                display: block
+                @media (max-width: 768px)
+                    display: none
+                .container
+                    display: flex
+                    .testimonials_container
+                        background-image: url(../images/quote_icon.png)
+                        background-size: 63%
+                        background-repeat: no-repeat
+                        padding: 0px 50px 50px 0px
+                        box-sizing: border-box
+                        margin-top: 50px
+                        width: 100%
+                        @media (max-width: 768px)
+                            display: none
+                        @media (min-width: 768px)
+                            display: block
+                        .testimonials_heading
+                            border-bottom: 1px solid $color1
+                            margin-bottom: 2rem
+                            h3
+                                padding-top: 30px
+                        .testimonials_holder
+                            .testimonials_content
+                                font-weight: 100
+                                color: $color1
+                                padding-bottom: 2rem
+                            .testimonials_author
+                                text-align: right
+                                color: $color1
+                                font-weight: 400
+                                padding-bottom: 2rem
+                                border-bottom: 1px solid
+                                margin-bottom: 1rem
+                            .swiper-wrapper
+                                padding-bottom: 20px
+                            .swiper-pagination-bullets
+                                bottom: 0px
+                                text-align: right
+
+        .faq_wrapper
+            background: white
+            box-sizing: border-box
+            padding: 87px
+            width: 70%
+            @media (max-width: 768px)
+                width: 100%
+                padding: 8%
+                padding-top: 100px
+            .vertical_line
+                height: 70px
+                border-left: 1px solid $color1
+                width: 1px
+                margin-top: -126px
+            h2
+                color: $black
+            .faq_inside_wrapper
+                .faq_question
+                    cursor: pointer
+                    border-top: 1px solid $black
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 30px 0px
+                    h4
+                        font-weight: 100
+                        margin: 0
+                        font-size: 17px
+                        color: black
+                        width: 92%
+                &:last-child
+                    border-bottom: 1px solid $black
+            .faq_content_wrapper
+                overflow: hidden
+                .faq_content_wrapper_inside
+                    font-weight: 100

@@ -1,0 +1,37 @@
+@import base/_variables
+@import base/_reset
+@import base/_typography
+@import parts/header
+@import parts/footer
+@import parts/homepage
+@import parts/iwc_block
+@import parts/hiw_block
+@import parts/iwb_block
+@import parts/faqs
+@import parts/testimonials
+@import parts/gforms
+@import parts/privacy_policy
+
+.privacy_policy, .liability
+    cursor: pointer
+
+.grecaptcha-badge 
+    visibility: hidden
+
+.container
+    width: 100%
+    max-width: 1280px
+    margin: auto
+    box-sizing: border-box
+    position: relative
+    @media (max-width: 1280px)
+        max-width: 1024px
+    @media (max-width: 1024px)
+        max-width: 980px
+        padding: 0 20px
+    @media (max-width: 768px)
+        // max-width: 480px
+        max-width: 95%
+        padding: 0
+    // @media (max-width: 480px)
+    //     max-width: 320px

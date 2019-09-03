@@ -1,0 +1,389 @@
+.page_content
+    background: #f6f6f8
+.banner_info_wrapper
+    display: flex
+    margin-top: -115px
+    align-items: center
+    width: 100%
+    .blue_block_left
+        background: $color1
+        width: 8%
+        height: 10%
+        display: flex
+        position: absolute
+        z-index: 1
+    .banner_info
+        -webkit-transition: opacity 1s ease-in-out
+        transition: opacity 1s ease-in-out
+        opacity: 1
+        height: 0
+        width: 0
+        overflow: hidden
+        .banner_bg_img
+            box-shadow: inset 0px 0px 5000px 5000px rgba(0,0,0,0.3)
+            -webkit-transition: opacity 1s ease-in-out
+            transition: opacity 1s ease-in-out
+            opacity: .6
+            height: 0
+            width: 0
+            overflow: hidden
+            position: absolute
+            background-size: cover
+            background-position: center
+        .container
+            z-index: 1
+            @media (max-width: 1600px)
+                width: 100%
+                margin-left: 10%
+            @media (max-width: 768px)
+                margin-top: 140px
+            .banner_title h1
+                text-transform: uppercase
+                color: $white
+                font-size: 41px
+                letter-spacing: 1.58px
+                @media (max-width: 768px)
+                    font-size: 23px
+        &.active
+            position: relative
+            overflow: hidden
+            width: 100%
+            height: 100vh 
+            display: flex
+            opacity: 1
+            .banner_bg_img
+                -webkit-transition: opacity 1s ease-in-out
+                transition: opacity 1s ease-in-out
+                opacity: 1
+                height: 100%
+                width: 100%
+                animation: bgScale 20s infinite ease-out
+                @keyframes bgScale
+                    0%
+                        transform: scale(1)
+                    50%
+                        transform: scale(1.1)
+                    100%
+                       transform: scale(1)
+            .circles
+                position: absolute
+                z-index: 1
+                width: 130px
+                margin-left: 10px
+                left: 50%
+                top: 50%
+                transform: translate(-50%,-50%)
+                display: flex
+                justify-content: center
+                align-items: center
+                @media (min-width: 923px)
+                    display: none
+                .circle1
+                    border-radius: 50%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 120px
+                    height: 120px
+                    background: $color1
+                    transition: all ease-in
+                    opacity: 0.6
+                    .circle2
+                        //padding: 150px
+                        border-radius: 50%
+                        border: 1px solid #ffffff
+                        animation: radar2 5s infinite
+                        transition: all ease-in
+                        background-color: transparent
+                        @keyframes radar2
+                            0%
+                                padding: 0
+                                opacity: 1
+                            20%
+                                padding: 200px
+                                opacity: 1
+                            60%
+                                padding: 250px
+                                opacity: 0
+                            100%
+                                opacity: 0
+                        .circle3
+                            //padding: 150px
+                            border-radius: 50%
+                            border: 1px solid #ffffff
+                            animation: radar3 5s infinite
+                            transition: all ease-in
+                            background-color: transparent
+                            @keyframes radar3
+                                0%
+                                    padding: 0
+                                    opacity: 1
+                                40%
+                                    padding: 200px
+                                    opacity: 1
+                                80%
+                                    padding: 250px
+                                    opacity: 0
+                                100%
+                                    opacity: 0
+                            .circle4
+                                //padding: 150px
+                                border-radius: 50%
+                                border: 1px solid #ffffff
+                                animation: radar4 5s infinite
+                                transition: all ease-in
+                                background-color: transparent
+                                @keyframes radar4
+                                    0%
+                                        padding: 0
+                                        opacity: 1
+                                    60%
+                                        padding: 200px
+                                        opacity: 1
+                                    100%
+                                        padding: 250px
+                                        opacity: 0
+            .banner_sub_title 
+                display: flex
+                -webkit-transition: opacity 2s ease-in-out
+                transition: opacity 2s ease-in-out
+                opacity: 1
+                @media (max-width: 768px)
+                    flex-direction: column
+        .banner_sub_title 
+            display: flex
+            -webkit-transition: opacity 1s ease-in-out
+            transition: opacity 1s ease-in-out
+            opacity: 0
+            .spotta_bed_text
+                font-weight: 100
+                z-index: 9999999
+                text-transform: uppercase
+                color: $white
+                font-size: 96px
+                letter-spacing: 3.65px
+                @media (max-width: 1024px)
+                    font-size: 70px
+                    line-height: 80px
+                span
+                    font-weight: 400
+            .pod_text
+                text-transform: uppercase
+                color: $white
+                font-size: 96px
+                letter-spacing: 3.65px
+                font-weight: 100
+                position: relative
+                z-index: 999999
+                padding-left: 27px
+                @media (max-width: 1024px)
+                    font-size: 70px
+                    line-height: 80px
+                @media (max-width: 768px)
+                    padding-left: 0px
+                .circles
+                    position: absolute
+                    z-index: -1
+                    width: 130px
+                    margin-left: 10px
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%,-50%)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    @media (max-width: 923px)
+                        left: 50%
+                        margin-left: -96px
+                        top: 50%
+                    @media (max-width: 923px)
+                        display: none
+                    .circle1
+                        border-radius: 50%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 120px
+                        height: 120px
+                        background: $color1
+                        transition: all ease-in
+                        opacity: 0.6
+                        .circle2
+                            //padding: 150px
+                            border-radius: 50%
+                            border: 1px solid #ffffff
+                            animation: radar2 5s infinite
+                            transition: all ease-in
+                            background-color: transparent
+                            @keyframes radar2
+                                0%
+                                    padding: 0
+                                    opacity: 1
+                                20%
+                                    padding: 200px
+                                    opacity: 1
+                                60%
+                                    padding: 250px
+                                    opacity: 0
+                                100%
+                                    opacity: 0
+                            .circle3
+                                //padding: 150px
+                                border-radius: 50%
+                                border: 1px solid #ffffff
+                                animation: radar3 5s infinite
+                                transition: all ease-in
+                                background-color: transparent
+                                @keyframes radar3
+                                    0%
+                                        padding: 0
+                                        opacity: 1
+                                    40%
+                                        padding: 200px
+                                        opacity: 1
+                                    80%
+                                        padding: 250px
+                                        opacity: 0
+                                    100%
+                                        opacity: 0
+                                .circle4
+                                    //padding: 150px
+                                    border-radius: 50%
+                                    border: 1px solid #ffffff
+                                    animation: radar4 5s infinite
+                                    transition: all ease-in
+                                    background-color: transparent
+                                    @keyframes radar4
+                                        0%
+                                            padding: 0
+                                            opacity: 1
+                                        60%
+                                            padding: 200px
+                                            opacity: 1
+                                        100%
+                                            padding: 250px
+                                            opacity: 0
+.spotta_tabs_wrapper
+    margin-top: -98px !important
+    display: flex
+    z-index: 1
+    @media (max-width: 768px)
+        margin-top: -203px !important
+    .spotta_tabs
+        width: 40%
+        background: $color1
+        color: $white
+        height: 100%
+        padding: 30px
+        box-sizing: border-box
+        transition: margin 0.5s, width 0.5s
+        text-align: center
+        font-size: 25px
+        text-transform: uppercase
+        cursor: pointer
+        box-shadow: inset 0px 0px 13px 6px #00000026
+        @media (max-width: 768px)
+            width: 49%
+            padding: 15px
+            text-align: center
+        .spotta_tab_title
+            display: flex
+            justify-content: center
+            align-items: center
+            h2
+                color: white
+                font-size: 25px
+                margin-bottom: 0px
+                @media (max-width: 768px)
+                    font-size: 15px
+            .right_chevron
+                margin-left: 15px
+                width: 12px
+                height: 12px
+                display: inline-flex
+                background: transparent
+                border-bottom: 2px solid white
+                border-right: 2px solid white
+                transform: rotate(-45deg)
+        .spotta_tab_introduction
+                display: none
+                p
+                    text-transform: none
+                    margin: 0
+                    opacity: 0
+        &.active
+            display: flex
+            height: 310px
+            padding: 60px 60px 0
+            margin-top: -136px
+            width: 60%
+            background: white
+            color: black
+            transition: margin 0.5s, width 0.5s
+            text-align: left
+            text-transform: uppercase
+            box-shadow: none
+            @media (max-width: 768px)
+                background: #f6f6f8
+                padding: 15px
+                text-align: center
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0px
+                height: auto
+                width: 49%
+            .spotta_tab_title
+                display: none
+                @media (max-width: 768px)
+                    display: block
+                h2
+                    color: black
+            .spotta_tab_introduction
+                display: block
+                p 
+                    // opacity: 1
+                    // transition: opacity 3s
+                    animation: introText 2s forwards
+                    @keyframes introText
+                        0%
+                            opacity: 0
+                        50%
+                            opacity: 0
+                        100%
+                            opacity: 1
+
+                    @media (max-width: 768px)
+                        display: none
+        &:not(:first-child)
+            @media (max-width: 768px)
+                margin-left: 2%
+.spotta_content_wrapper
+    z-index: 2
+    // display: flex
+    position: relative
+    // align-items: center
+    // justify-content: center
+    .spotta_content
+        display: none
+        visibility: hidden
+        position: relative
+        top: 0
+        left: 0
+        width: 100%
+        &.active
+            display: block
+            visibility: visible
+            .spotta_tab_introduction
+                display: none
+                @media (max-width: 768px)
+                    display: block
+                .container
+                    background: white
+                    padding: 40px 30px
+            
+                
+
+                   
+                
+               

@@ -1,0 +1,46 @@
+.hiw_section
+    margin-top: 4rem
+    .container
+        @media (max-width: 1024px)
+            max-width: 100%
+            padding: 0px
+        .hiw_heading
+            position: absolute
+            left: calc(51% - 187px)
+            text-transform: uppercase
+            margin-top: 40px
+            @media (max-width: 768px)
+                left: 0px
+                width: 100%
+                text-align: center
+            h2
+                color: white
+                @media (max-width: 768px)
+                    font-size: 39px
+        .hiw_steps_wrapper
+            display: flex
+            @media (max-width: 768px)
+                flex-direction: column
+            .anti_shadow
+                box-sizing: border-box
+                padding: 10rem 3rem 3rem 3rem
+                width: 25%
+                @media (max-width: 768px)
+                    width: 100%
+                    &:not(:first-child)
+                        padding: 3rem
+                &:first-child
+                    background: #154371
+                &:nth-child(2)
+                    background: #1d558e
+                &:nth-child(3)
+                    background: #2a70b7
+                &:nth-child(4)
+                    background: #3088e2
+                .hiw_image
+                    margin-bottom: 3rem !important
+                    width: 100%
+                    max-width: 190px
+                    margin: auto
+                .hiw_content
+                    color: white

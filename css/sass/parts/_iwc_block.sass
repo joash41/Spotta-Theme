@@ -1,0 +1,44 @@
+.iwc_section
+    &:nth-child(odd) .container .iwc_image
+        @media (max-width: 768px)
+            margin-left: 4%
+    .container
+        display: flex
+        align-items: flex-start
+        @media (max-width: 768px)
+            background: white
+            flex-direction: column !important
+        .iwc_image
+            margin-top: -50px
+            width: 40%
+            position: relative
+            @media (max-width: 768px)
+                width: 100%
+                margin-top: 0px
+                margin-left: -4%
+            img 
+                -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.13)
+                -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.13)
+                box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.13)
+        .iwc_content_wrapper
+            padding: 67px 67px 166px
+            background: white
+            width: 60%
+            box-sizing: border-box
+            @media (max-width: 1280px)
+                padding: 67px 67px 100px
+            @media (max-width: 768px)
+                width: 100%
+                padding: 8%
+                padding-top: 100px
+            .vertical_line
+                height: 70px
+                border-left: 1px solid $color1
+                width: 1px
+                margin-top: -110px
+            .iwc_heading
+                padding-top: 15px
+                text-transform: uppercase
+                h3
+                    color: #39414f
+    

@@ -1,0 +1,117 @@
+footer
+    background: #f6f6f8
+    padding-top: 4rem
+    .container
+        background: white
+        position: relative
+        @media (max-width: 768px)
+            padding: 4%
+        .contact_section
+            display: flex
+            position: relative
+            z-index: 9
+            @media (max-width: 768px)
+                flex-direction: column
+            .contact_info
+                padding-left: 70px
+                padding-right: 50px
+                box-sizing: border-box
+                width: 35%
+                @media (max-width: 768px)
+                    padding: 0px
+                    width: 100%
+                .vertical_line
+                    height: 70px
+                    border-left: 1px solid $color1
+                    width: 1px
+                    margin-top: -45px
+                .contact_heading
+                    h2
+                        font-size: 38px
+                        text-transform: uppercase
+                        color: $black
+                        @media (max-width: 1024px)
+                            font-size: 28px
+                        @media (max-width: 768px)
+                            font-size: 40px
+                .contactus_description
+                    border-bottom: 1px solid $color1
+                    margin-bottom: 2rem
+                    padding-bottom: 2rem
+                    color: $black
+                .contactus_address
+                    color: $black
+                    img
+                        width: 116px
+                .contactus_phone
+                    border-bottom: 1px solid $color1
+                    padding-bottom: 2rem
+                    a
+                        color: $black
+                        display: flex
+                        align-items: center
+                        &:hover
+                            color: $color1
+                        img
+                            padding-right: 10px
+                            width: 15px
+                            filter: invert(23%) sepia(11%) saturate(980%) hue-rotate(179deg) brightness(92%) contrast(88%)
+        .contact_form_wrapper
+            padding-top: 6rem
+            width: 65%
+            padding-right: 34px
+            @media (max-width: 768px)
+                width: 100%
+                padding-right: 0px
+    .copyright
+        background: #39414f
+        .container
+            color: white
+            background: transparent
+            padding: 10rem 0px 6rem
+            margin-top: -76px
+            display: flex
+            @media (max-width: 923px)
+                flex-direction: column
+            .copyright_info
+                width: 25%
+                @media (max-width: 1024px)
+                    width: 27%
+                @media (max-width: 923px)
+                    width: 100%
+                    text-align: center
+            .separator_line_wrapper
+                width: 60%
+                display: flex
+                align-items: center
+                padding: 0px 20px
+                box-sizing: border-box
+                @media (max-width: 1024px)
+                    width: 53%
+                @media (max-width: 923px)
+                    width: 100%
+                    justify-content: center
+                    padding: 20px 0px
+                .separator_line
+                    width: 100%
+                    height: 1px
+                    background: white
+                    @media (max-width: 923px)
+                        width: 75%
+            .footer_menu
+                width: 16%
+                @media (max-width: 923px)
+                    width: 100%
+                ul#menu-footer-menu
+                    display: flex
+                    list-style: none
+                    justify-content: space-between
+                    @media (max-width: 923px)
+                        justify-content: center
+                    li
+                        padding: 0 20px
+                        text-transform: uppercase
+                        a
+                            color: white
+                            &:hover
+                                color: $color3
